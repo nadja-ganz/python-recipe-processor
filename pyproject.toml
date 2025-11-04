@@ -1,0 +1,22 @@
+[project]
+name = "python-recipe-processor"
+version = "0.1.0"
+description = "Python Recipe Processor"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pdfplumber = "*"
+pillow = "*"
+python-dotenv = "*"
+openai = "*"
+
+[tool.poetry.group.dev.dependencies]
+
+
+[tool.poetry.scripts]
+rpr = "python_recipe_processor.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
